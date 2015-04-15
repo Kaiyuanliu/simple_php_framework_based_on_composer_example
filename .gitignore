@@ -1,0 +1,11 @@
+# MAC
+.DS_Store
+
+# phpstorm
+.idea/
+
+# composer.lock
+composer.lock
+
+# composer vendor
+/vendor/
