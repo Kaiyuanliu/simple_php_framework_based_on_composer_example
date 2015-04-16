@@ -7,8 +7,8 @@ use NoahBuscher\Macaw\Macaw;
 
 Macaw::get('/', 'App\\Controllers\\HomeController@home');
 
-Macaw::get('/(:all)', function($fu) {
-    echo 'Route <b>'.$fu.'</b> Not Found';
-});
+Macaw::$error_callback = function() {
+    throw new Exception("Route Not Found!");
+};
 
 Macaw::dispatch();
