@@ -1,9 +1,21 @@
-<?php
-/**
- * home page
- */
-
-if (isset($article)) {
-    echo '<h1>'.$article['title'].'</h1>';
-    echo '<h1>'.$article['content'].'</h1>';
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><?php echo $title;?></title>
+</head>
+<body>
+    <div class="article">
+        <h1><?php echo $article['title']?></h1>
+        <div class="content">
+            <?php echo $article['content'] ?>
+        </div>
+    </div>
+    <ul class="fuckme">
+        <li>Fuck Me!</li>
+        <li>
+            <?php echo $fuck_me;?>
+        </li>
+    </ul>
+</body>
+</html>
