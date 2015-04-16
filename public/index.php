@@ -6,9 +6,8 @@
  * @version    0.0.1
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
  */
-define('BASE_PATH', __DIR__.'/../');
 
-require BASE_PATH.'vendor/autoload.php';
+define('PUBLIC_PATH', __DIR__);
 
-// routes
-require BASE_PATH.'config/routes.php';
+// require bootstrap file
+require_once PUBLIC_PATH.'/../bootstrap/app.php';
