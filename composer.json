@@ -1,9 +1,13 @@
 {
     "require": {
       "noahbuscher/macaw": "dev-master",
-      "illuminate/database": "*",
-      "filp/whoops": "*",
-      "swiftmailer/swiftmailer": "*"
+      "illuminate/database": "~5.0",
+      "filp/whoops": "~1.0",
+      "swiftmailer/swiftmailer": "~5.0",
+      "predis/predis": "~1.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "~4.0"
     },
     "autoload": {
       "psr-4": {
